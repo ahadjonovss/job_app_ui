@@ -12,8 +12,8 @@ class WelcomeBack extends StatelessWidget {
         child: Container(
           child: Container(
             padding: const EdgeInsets.only(left: 32,right: 32,top: 40),
-            margin: const EdgeInsets.only(top: 260),
-            height: 580,
+            margin: const EdgeInsets.only(top: 240),
+            height: 600,
             width: double.infinity,
             decoration: const BoxDecoration(
               color: Colors.white,
@@ -28,7 +28,7 @@ class WelcomeBack extends StatelessWidget {
                 Container(
                     child: Text("Login to continue",style: TextStyle(fontSize: 16,fontWeight: FontWeight.w200),)), //Login to continue
                 Container(
-                  margin: EdgeInsets.only(top: 40),
+                  margin: EdgeInsets.only(top: 20),
                     child: Text("Email adress",style: TextStyle(fontSize: 16,fontWeight: FontWeight.w200),)),
                 Container(
                   margin: EdgeInsets.only(top: 12),
@@ -198,7 +198,24 @@ class WelcomeBack extends StatelessWidget {
                       ],
                     ),
                   ),
-                )//Welcome
+                ), // Social medias
+                Center(
+                  child: Container(
+                    padding: EdgeInsets.only(left: 50),
+                    child: Row(
+                      children:[
+                        Text("Don't have an account?  ",style: TextStyle(fontSize: 16,fontWeight: FontWeight.w200),
+                      ),
+                        InkWell(
+                          onTap: (){},
+                          child: Text("Sing Up",style:
+                          TextStyle(color: Colors.black,fontSize: 16,fontWeight: FontWeight.w600 ),
+                          ),
+                        ),
+                    ],
+                  ),
+                  ),
+                ),
               ],
             ),
 
