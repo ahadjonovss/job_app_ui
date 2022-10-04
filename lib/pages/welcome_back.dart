@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:jobs_ui/pages/create_account.dart';
+import 'package:jobs_ui/pages/forgot_password.dart';
+import 'package:jobs_ui/pages/home_page.dart';
 
 class WelcomeBack extends StatelessWidget {
   const WelcomeBack({Key? key}) : super(key: key);
@@ -55,14 +58,18 @@ class WelcomeBack extends StatelessWidget {
                   ),
                 ), //Password
                 InkWell(
-                  onTap: (){},
+                  onTap: (){
+                    
+                  },
                   child: Container(
-                    margin: EdgeInsets.only(left: 183,top: 12),
-                    child: Text("Forgot your password?",style: TextStyle(fontWeight: FontWeight.w600,fontSize: 14),),
+                    margin: const EdgeInsets.only(left: 183,top: 12),
+                    child: const Text("Forgot your password?",style: TextStyle(fontWeight: FontWeight.w600,fontSize: 14),),
                   ),
                 ), //Forgot
                 InkWell(
-                  onTap: (){},
+                  onTap: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>HomePage()));
+                  },
                   child: Center(
                     child: Container(
                       margin: EdgeInsets.only(top: 16),
@@ -207,7 +214,9 @@ class WelcomeBack extends StatelessWidget {
                         Text("Don't have an account?  ",style: TextStyle(fontSize: 16,fontWeight: FontWeight.w200),
                       ),
                         InkWell(
-                          onTap: (){},
+                          onTap: (){
+                            Navigator.push(context, MaterialPageRoute(builder: (context)=>CreateAccount()));
+                          },
                           child: Text("Sing Up",style:
                           TextStyle(color: Colors.black,fontSize: 16,fontWeight: FontWeight.w600 ),
                           ),

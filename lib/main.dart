@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:jobs_ui/pages/test.dart';
 import 'package:jobs_ui/pages/welcome_back.dart';
 
 void main() {
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
 
         primarySwatch: Colors.blue,
       ),
-      home: WelcomeBack(),
+      home: const WelcomeBack(),
     );
   }
 }
